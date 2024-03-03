@@ -1,0 +1,441 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{text-decoration: none;}
+
+/* Tophead Section Start */
+header .tophead{
+    height: 28px;
+    background: #34313a;
+}
+header .tophead ul li a{
+    margin: 0px 20px;
+    color: #fff;
+    font-size: 13px;
+}
+header .tophead .leftgroup ul li a.active{
+    width: auto;
+    height:auto;
+    color: #b00000;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    position: relative;
+    background: #fff;
+    display: inline-block;
+}
+header .tophead .leftgroup ul li a.active:hover{
+    text-decoration: none;
+}
+header .tophead .leftgroup ul li a.active::before{
+    content: "";
+    top: 0px;
+    width: 0;
+    height: 0;
+    right: 100%;
+    position: absolute;
+    border-right: 15px solid #fff;
+    border-bottom: 0px solid #fff;
+    border-top: 28px solid transparent;
+}
+header .tophead .leftgroup ul li a.active::after{
+    content: "";
+    top: 0px;
+    width: 0;
+    height: 0;
+    left: 100%;
+    position: absolute;
+    border-top: 28px solid #fff;
+    border-right: 15px solid transparent;
+    border-bottom: 0px solid transparent;
+}
+header .tophead .leftgroup ul li a:hover{
+    text-decoration: underline;
+}
+header .tophead .rightgroup ul li{
+    margin: 0px 15px;
+}
+header .tophead .rightgroup ul li select{
+    border: none;
+    color: #fff;
+    font-size: 13px;
+    background: #34313a;
+}
+@media screen and (max-width:900px){
+    .tophead{
+        display: none;
+    }
+}
+/* Tophead section end */
+/* Navbar Section Start */
+.navbar{
+    z-index: 1;
+}
+nav a{
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0px;   
+}
+.get_a_quote button{
+    font-size: 13px;
+    background-color: #b00000;
+}
+/* Navbar Section End */
+/* Slider Section Start */
+.carousel-inner .carousel-item{
+    height: 500px;
+}
+@keyframes zoomin{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.3);
+    }
+}
+.carousel-inner .carousel-item img{
+    animation: zoomin 20s infinite;
+}
+.carousel-dark .carousel-indicators [data-bs-target]{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+@media screen and (max-width:600px){
+    .slider_window{
+        display: none;
+    }
+    .international{
+        padding-top: 60px;
+    }
+}
+#sliderbtn{
+    position: relative;
+    bottom: 50px;
+}
+/* Slider Section End */
+/* International Section Start */
+.international .int_box{
+    background-color: white;
+    position: relative;
+    bottom: 60px;
+    z-index: 2;
+}
+.international h2{
+    color: #b00000;
+}
+.international p span{
+    color: #b00000;
+}
+.international .int_bottom{
+    font-size: 19px;
+    color: #b00000;
+}
+/* ESC Icon Start */
+.esc_icon a{
+    border: 2px solid rgb(192, 17, 17);
+}
+.esc_icon{
+    position: fixed;
+    top:540px;
+    left: 1170px;
+    z-index: 5;
+}
+.esc_icon a{
+    background-color: white;
+    filter: opacity(80%);
+}
+.esc_icon a .arrow{
+    color:#b00000;
+}
+.esc_icon a:hover{
+    background-color: white;
+    filter: opacity(100%);
+}
+@media screen and (max-width:900px){
+    .esc_icon{
+       display: none;
+    }
+}
+/* ESC Icon End */
+/* International Section End */
+/* Individual Corporation Ssection Start */
+.ic{
+    font-size: 14px;
+    letter-spacing: 0.5;
+    word-spacing: 2;
+}
+.ic span{
+    color:#b00000 ;
+}
+.ic button{
+    background-color: #b00000;
+}
+.ic .ic-left-button{
+    border: 2px solid  #b00000;
+    background-color: white;
+    color:  #b00000;
+    transition:all 0.3s ease-in-out;
+}
+.ic .ic-left-button:hover{
+    border: 2px solid  #b00000;
+    background-color:  #b00000;
+    color: white; 
+}
+.ic .ic-right-button:hover{
+    background-color:  #850101;
+}
+.box_img{
+    overflow: hidden;
+}
+.box_img img:hover{
+    transition: all 0.9s;
+   transform: scale(1.1);
+}
+.ic .individual{
+    font-size: 20px;
+}
+.individual{
+    font-size: 20px;
+    color: white;
+    background-color: #b00000;
+    position: relative;
+    top:60px;
+    right:15px;
+    z-index: 5;
+}
+.corporation{
+    font-size: 20px;
+    color: white;
+    background-color: #b00000;
+    position: relative;
+    top:60px;
+    right:15px;
+    z-index: 5;
+}
+/* Individual Corporation Ssection End */
+/* Domestic Section Start */
+.domestic{
+    background-color: rgb(44, 31, 44);
+   }
+.domestic .dom_p{
+    font-size: 11px;
+    color: gray;
+}
+.domestic .dom_p a{
+    font-size: 11px;
+    color: gray;
+}
+.domestic img:hover{
+   transform: scale(1.1);
+}
+/* Domestic Section End */
+/* Client Satisfaction Section Start */
+.client_satisfaction h3{
+    color: #940404;
+}
+.client_satisfaction .client_para p{
+    font-size: 14px;
+}
+.client_satisfaction .client_para p span{
+    word-spacing: 5px;
+    color: #940404;
+}
+/* Client Satisfaction Section End */
+/* Blur Count Section Start */
+.move img{
+   position: absolute;
+   left: 0px;
+   right: 0px;
+}
+.move button{
+    font-size: 14px;
+    background-color: #b00000;
+}
+.move button:hover{
+    background-color: #7e0303;
+}
+/* Blur Count Section End */
+/* Worldwide Section Start */
+.worldwide h2{
+    color:  #b00000;
+}
+.worldwide p{
+    font-size: 14px;
+}
+.worldwide p span{
+    color:#b00000;
+}
+.worldwide .wide-left-button{
+    font-size: 14px;
+    border: 2px solid  #b00000;
+    background-color: white;
+    color:  #b00000;
+    transition:all 0.2s ease-in-out;
+}
+.worldwide .wide-left-button:hover{
+    border: 2px solid  #b00000;
+    background-color:  #b00000;
+    color: white; 
+}
+.worldwide .wide-right-button{
+    font-size: 14px;
+    background-color: #b00000;
+    border: 1px solid #b00000;
+}
+.worldwide .wide-right-button:hover{
+    background-color: #7e0303;
+}
+/* Worldwide Section End */
+/* Footer Section Start */
+.footer_top{
+    background-color: rgb(63, 62, 62);
+}
+.footer_top ul li a{
+    font-size: 13px;
+}
+.footer_top .foot_icon li a{
+    font-size: 25px;
+}
+.footer_top .footer_top2 ul li{
+    padding: 4px 0px 4px 0px;
+}
+.footer_top .footer_top2 ul li a{
+   color: rgb(206, 199, 199);
+}
+.footer_top .footer_top3 ul li{
+    padding: 4px 0px 4px 0px;
+}
+.footer_top .footer_top3 ul li a{
+   color: rgb(206, 199, 199);
+}
+.footer_top .footer_top4 ul li{
+    padding: 4px 0px 4px 0px;
+}
+.footer_top .footer_top4 ul li a{
+   color: rgb(206, 199, 199);
+}
+.footer_end p{
+    font-size: 12px;
+    padding-top: 5px;
+}
+/* Footer Section End */
+/* Choosing AGS Page Start */
+.choosing{
+    background-color: rgb(43, 41, 41);
+}
+.choosing h6{
+    color: white;
+    border-bottom: 1px solid white;
+}
+.choosing img:hover{
+    transform: scale(1.1);
+}
+.choosing a{
+    font-size: 14px;
+    color:rgb(187, 184, 184)
+}
+.choosing a:hover{
+    font-weight: bold;
+}
+.choosing .cross a{
+    font-size: 20px;
+}
+/* Choosing AGS Page End */
+/* Services Page Start */
+.services{
+    background-color: rgb(43, 41, 41);
+}
+.services h6{
+    color: white;
+    border-bottom: 1px solid white;
+}
+.services img:hover{
+    transform: scale(1.1);
+}
+.services a{
+    font-size: 12px;
+    color:rgb(187, 184, 184)
+}
+.services a:hover{
+    font-weight: bold;
+}
+.services .cross a{
+    font-size: 20px;
+}
+/* Services Page End */
+/* Network Page Start */
+.benefit h2{
+  color: #b00000;
+}
+.contries h6{
+    color: #b00000;
+}
+.contries p{
+    font-size: 14px;
+}
+.contries ul li a{
+    font-size: 14px;
+    color: black;
+}
+.contries ul li a:hover{
+    color:#b00000
+}
+/* Network Page End */
+/* News Page Start */
+.news .int_box{
+    background-color: white;
+    position: relative;
+    bottom: 60px;
+    z-index: 2;
+}
+.news h2{
+    color: #b00000;
+}
+.news p span{
+    color: #b00000;
+}
+.news .int_bottom{
+    font-size: 19px;
+    color: #b00000;
+}
+.news_collection .news_1 a h6{
+color:rgb(156, 14, 14)
+}
+.news_collection .news_1 p{
+    font-size: 13px;
+    word-spacing: 3px;
+    text-align: justify;
+ }
+ .news_collection .news_1 p span{
+    color: #b00000;
+ }
+ .news_collection button{
+    background-color: white;
+    color: #b00000;
+    border: 2px solid #b00000;
+ }
+ .news_collection button:hover{
+    background-color:  #b00000;
+    color: white;
+    transition: all 0.3s ease-in-out;
+ }
+/* News Page End */
+/* General Contact Page Start */
+.general_form span{
+ font-size: 14px;
+}
+.general_form button{
+    background-color: #b00000;
+    color: white;
+}
+.general_form button:hover{
+    background-color: #700808;
+    transition: all 0.3s ease-in-out;
+}
+/* General Contact Page End */
